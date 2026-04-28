@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luka Lekić | Modern Web Solutions</title>
-  <meta name="description" content="Clean, fast, and modern static websites by Luka Lekić." />
+  <title>Contact | Luka Lekić</title>
+  <meta name="description" content="Get in touch with Luka Lekić." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,56 +19,47 @@
 <header class="site-header">
   <a class="brand" href="index.html">Luka Lekić</a>
   <nav class="primary">
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="privacy.html">Privacy</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
 </header>
 
 <main>
-  <section class="hero" id="home">
-    <h1>Modern websites, built simply.</h1>
-    <p>Clean, fast, and responsive web experiences crafted with attention to detail. No frameworks, no clutter — just well-built pages that load quickly and work everywhere.</p>
-    <div class="hero-actions">
-      <a href="#features" class="btn">Explore Features</a>
-      <a href="contact.html" class="btn secondary">Get in Touch</a>
-    </div>
-  </section>
+  <section class="section">
+    <h2>Contact</h2>
+    <p class="lead">Have a question, an idea, or a project in mind? Send a message and you'll get a response soon.</p>
 
-  <section class="section" id="about">
-    <h2>About</h2>
-    <p class="lead">I build straightforward, accessible websites that focus on what matters: clarity, speed, and a great user experience. Every project starts with a simple idea — make the web feel light again.</p>
-    <p>From small landing pages to multi-page sites, the approach stays the same: clean code, modern design, and reliable performance. No tracking bloat, no heavy frameworks unless they earn their place.</p>
-  </section>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Get in touch</h3>
+        <p>The quickest way to reach out is by email. Feel free to share as much detail as you'd like — the more context, the better.</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@lukalekic.com">contact@lukalekic.com</a></p>
+        <p>You can also use the form on the right and a reply will land in your inbox shortly.</p>
+      </div>
 
-  <section class="section" id="features">
-    <h2>Features &amp; Services</h2>
-    <p class="lead">A small set of services, done well.</p>
-    <div class="cards">
-      <div class="card">
-        <h3>Responsive Design</h3>
-        <p>Layouts that adapt smoothly from mobile to desktop using modern CSS grid and flexbox.</p>
-      </div>
-      <div class="card">
-        <h3>Performance First</h3>
-        <p>Lightweight pages, optimized assets, and minimal JavaScript for fast load times everywhere.</p>
-      </div>
-      <div class="card">
-        <h3>Clean Codebase</h3>
-        <p>Readable HTML, organized CSS, and well-structured files that are easy to maintain.</p>
-      </div>
-      <div class="card">
-        <h3>SEO Friendly</h3>
-        <p>Semantic markup and thoughtful metadata so your site is easy for search engines to understand.</p>
-      </div>
-      <div class="card">
-        <h3>Accessibility</h3>
-        <p>Color contrast, keyboard navigation, and clear structure baked in from the start.</p>
-      </div>
-      <div class="card">
-        <h3>Easy Deployment</h3>
-        <p>Static-first, ready to ship to Netlify or any modern static host with a single command.</p>
-      </div>
+      <form class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required />
+          <div class="error" aria-live="polite"></div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <div class="error" aria-live="polite"></div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or question..." required></textarea>
+          <div class="error" aria-live="polite"></div>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+        <div class="form-status" aria-live="polite"></div>
+      </form>
     </div>
   </section>
 </main>
